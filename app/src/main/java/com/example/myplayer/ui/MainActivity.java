@@ -1,8 +1,10 @@
-package com.example.myplayer;
+package com.example.myplayer.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.myplayer.R;
 
 public class MainActivity extends AppCompatActivity {
 
