@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_navigation"
+    app:startDestination="@+id/first_fragment">
+    <fragment
+        android:id="@+id/first_fragment"
+        android:name="com.example.myplayer.ui.fragment.playlist.PlaylistFragment"
+        android:label="@string/title_first"
+        tools:layout="@layout/fragment_playlist">
+
+        <action
+            android:id="@+id/second_fragment_action"
+            app:destination="@id/second_fragment"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/second_fragment"
+        android:name="com.example.myplayer.ui.fragment.playerList.PlayerListFragment"
+        android:label="@string/title_second"
+        tools:layout="@layout/fragment_player_list">
+
+        <action
+            android:id="@+id/first_fragment_action"
+            app:destination="@id/first_fragment"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit"  />
+    </fragment>
+
+</navigation>
