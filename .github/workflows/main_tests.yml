@@ -1,11 +1,9 @@
-name: Android CI
+name: Android Unit tests
 
 on:
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
-
+  
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -27,9 +25,5 @@ jobs:
 
     - name: Run Tests
       run: ./gradlew test
-      
-    - name: Build Project
-      run: ./gradlew assemble
-
-    - name: Build Debug APK
-      run: bash ./gradlew :app:assembleDebug
+   
+   
