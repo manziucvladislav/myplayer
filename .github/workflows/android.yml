@@ -19,9 +19,6 @@ jobs:
         java-version: '11'
         distribution: 'adopt'
         cache: gradle
-    
-    - name: Unit tests
-      run: bash ./gradlew test --stacktrace
 
     - name: Run Tests
       run: ./gradlew test
